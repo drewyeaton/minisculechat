@@ -1,0 +1,214 @@
+/* @group typography */
+
+html {font-size: 100.01%;
+}
+body {color:#222;
+	font: 75% "Lucida Grande", Lucida, Verdana, sans-serif;
+}
+h1, h2, h3, h4, h5, h6 {font-weight: normal;color: #333;
+	font-family: "myriad pro", Georgia, "Times New Roman", Times, serif;
+	font-style: normal;
+	text-shadow: #fff 0 1px 0;
+}
+h1 {
+	line-height: 1.2;
+	margin-bottom: 1em;
+	font-size: 2.5em;
+	font-weight:700;
+}
+h2 {font-size:2em;margin-bottom:0.75em;font-weight:500;}
+h3 {font-size:1.5em;line-height:1;margin-bottom:1em;font-weight:500;}
+h4 {font-size:1.2em;line-height:1.25;margin-bottom:1.25em;font-weight:500;}
+h5 {font-size:1em;font-weight:bold;margin-bottom:1.5em;font-weight:700;}
+h6 {font-size:1em;font-weight:bold;}
+h1 img, h2 img, h3 img, h4 img, h5 img, h6 img {margin:0;}
+p {margin:0 0 1.5em;}
+p img.left {float:left;padding:0;
+	margin-right: 1.5em;
+	margin-left: 0;
+	margin-bottom: 1.5em;
+}
+p img.right {float:right;
+	margin-right: 0;
+	margin-left: 1.5em;
+	margin-bottom: 1.5em;
+}
+a:focus, a:hover {color:#000; border-bottom: 1px solid #999;
+}
+a {color: #444;
+	text-decoration: none;
+	border-bottom: 1px solid #ccc;
+}
+
+a.image, a.heading {
+	border-bottom-style: none;
+}
+blockquote {margin:1.5em;color:#666;font-style:italic;}
+strong {font-weight:bold;}
+em, dfn {font-style:italic;}
+dfn {font-weight:bold;}
+sup, sub {line-height:0;}
+abbr, acronym {border-bottom:1px dotted #666;}
+address {margin:0 0 1.5em;font-style:italic;}
+del {color:#666;}
+pre {margin:1.5em 0;white-space:pre;}
+pre, code, tt {font:1em 'andale mono', 'lucida console', monospace;line-height:1.5;}
+li ul, li ol {margin:0;}
+ul, ol {margin:0 1.5em 1.5em 0;padding-left:3.333em;}
+ul {list-style-type:disc;}
+ol {list-style-type:decimal;}
+dl {margin:0 0 1.5em 0;}
+dl dt {font-weight:bold;}
+dd {margin-left:1.5em;}
+table {margin-bottom:1.4em;width:100%;}
+th {font-weight:bold;}
+thead th {background:#c3d9ff;}
+th, td, caption {padding:4px 10px 4px 5px;}
+tr.even td {background:#e5ecf9;}
+tfoot {font-style:italic;}
+caption {background:#eee;}
+.small {font-size:.8em;margin-bottom:1.875em;line-height:1.875em;}
+.large {font-size:1.2em;line-height:2.5em;margin-bottom:1.25em;}
+.hide {display:none;}
+.quiet {color:#666;}
+.loud {color:#000;}
+.highlight {background:#ff0;}
+.added {background:#060;color:#fff;}
+.removed {background:#900;color:#fff;}
+.first {margin-left:0;padding-left:0;}
+.last {margin-right:0;padding-right:0;}
+.top {margin-top:0;padding-top:0;}
+.bottom {margin-bottom:0;padding-bottom:0;}
+
+/* @end */
+
+/* @group layout */
+
+/*.container {
+	width: 900px;
+	margin: 0 auto;
+}*/
+
+/*.header {
+	float: left;
+	width: 900px;
+	padding-top: 3em;
+	height: 6em;
+}*/
+
+/*.content {
+	width: 900px;
+	float: left;
+	position: relative;
+}*/
+
+body {
+	background-color: #e1f2fb;
+}
+
+#chat {
+	overflow: auto;
+	margin: 5px;
+	padding: 5px;
+	background-color: #f7f9fb;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	height: 320px;
+	border-top: 1px solid #c2e0f1;
+	border: 1px solid #c2e0f1;
+}
+
+#chat .message {
+	background-color: #ddd;
+	background-image: -webkit-gradient(linear, 0% 0%, 0% 95%, from(#fff), to(#ddd));
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	-webkit-box-shadow: 0px 1px 4px #ddd;
+	-moz-box-shadow: 0px 1px 4px #ddd;
+	box-shadow: 0px 1px 4px #ddd;
+	position: relative;
+	margin-bottom: 30px;
+	border: 1px solid #999;
+	border-top: 1px solid #ccc;
+}
+
+#chat .message.is_sending {
+	color: #999;
+	border: 1px solid #ccc;
+}
+
+#chat .message.from_friend {
+	background-color: #f1d9bd;
+	background-image: -webkit-gradient(linear, 0% 0%, 0% 95%, from(#fff3e5), to(#f1d9bd));
+	border: 1px solid #d88524;
+	border-top: 1px solid #f1b269;
+}
+
+#chat .body {
+	/*text-shadow: #ccc 0 1px 0;*/
+	display: block;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	margin-right: 11px;
+	margin-left: 11px;
+}
+
+#chat .author {
+	text-shadow: #fff 0 -1px 0;
+	position: absolute;
+	left: 10px;
+	bottom: -20px;
+	color: #333;
+	font: bold 1.2em "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+}
+
+#chat  {
+	
+}
+
+#chat_form {
+	
+}
+
+#chat_form p {
+	margin-bottom: 5px;
+	margin-right: 10px;
+	margin-left: 10px;
+}
+
+#chat_form input {
+	font-size: 1.8em;
+	/*display: block;*/
+	width: 98%;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	background-image: -webkit-gradient(linear, 0% 0%, 0% 90%, from(#eff7fb), to(#fff));
+	border: 1px solid #84a2b1;
+}
+
+#chat_form .author label {
+	color: #69818d;
+	font-size: 1.8em;
+	float: left;
+	padding-top: 4px;
+	margin-right: 10px;
+}
+
+#chat_form .author input {
+	font-size: 1.8em;
+	width: 200px;
+}
+
+#chat_form .message input {
+}
+
+#chat_form .message label {
+	display: none;
+}
+
+#chat_form button {
+	display: none;
+}

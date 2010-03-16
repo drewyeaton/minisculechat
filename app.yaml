@@ -1,0 +1,15 @@
+application: werkaut
+version: 1
+runtime: python
+api_version: 1
+
+handlers:
+  - url: /js
+    static_dir: static/js
+
+  - url: /css
+    static_dir: static/css
+
+  - url: .*
+    script: main.py
+

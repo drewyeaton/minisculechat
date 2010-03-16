@@ -1,0 +1,38 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<title>test</title>
+	
+	<script src="/js/jquery.js" type="text/javascript" charset="utf-8"></script>
+	<script src="/js/jquery.jqote.js" type="text/javascript" charset="utf-8"></script>
+	<script src="/js/json2.js" type="text/javascript" charset="utf-8"></script>
+	<script src="/js/logic.js" type="text/javascript" charset="utf-8"></script>
+	
+	<link rel="stylesheet" href="/css/reset.css" type="text/css" media="screen" charset="utf-8">
+	<link rel="stylesheet" href="/css/shared.css" type="text/css" media="screen" charset="utf-8">
+</head>
+
+<body>    
+    <form id="chat_form" action="/test_data/" method="post" accept-charset="utf-8">
+        <p class="author"><label for="author">My name is</label><input type="text" name="author" value="Anonymous" id="author" placeholder="type your name"></p>
+        
+        <div id="chat"></div>
+        
+        <p class="message"><label for="message">Message</label><input type="text" name="message" value="" id="message" placeholder="type your message"></p>
+        <button class="submit">Send</button>
+    </form>
+    
+    
+    <script type="text/html" id="message_tpl">
+    <![CDATA[
+        <div class="message">
+            <span class="body"><%= this.message %></span>
+            <span class="author"><%= this.author %></span>
+        </div>
+    ]]>    
+    </script>
+</body>
+</html>
